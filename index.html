@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Redesign Rokomari.com Website's navigation & hero section with mobile responsive layout">
+  <title>Rokomari Redesign - Modern UX & Responsive Layout</title>
+  <link rel="preload" as="image" href="Image/Book banner.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="Image/Headphone.jpg" fetchpriority="high">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container top-bar-flex">
+      <div class="top-bar-info">
+        <span><i class="fa-solid fa-phone"></i> Hotline: 16297</span>
+        <span><i class="fa-solid fa-truck"></i> সারা বাংলাদেশে ক্যাশ অন ডেলিভারি</span>
+      </div>
+      <ul class="top-bar-links">
+        <li><a href="#"><i class="fa-solid fa-mobile-screen"></i> অ্যাপ ডাউনলোড</a></li>
+        <li><a href="#">অর্ডার ট্র্যাক করুন</a></li>
+        <li><a href="#">বই ডোনেশন</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="container header-inner">
+
+      <button class="hamburger-btn" id="openDrawer" aria-label="Open Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="logo"><img src="Image/Rokomari.svg 1.png" alt="Logo"></div>
+
+      <div class="search-container">
+        <div class="search-wrapper">
+          <select class="category-select">
+            <option>Category</option>
+            <option>বই</option>
+            <option>ইলেকট্রনিক্স</option>
+            <option>স্টেশনারি</option>
+          </select>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search..." autocomplete="off">
+          <button class="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="search-results-dropdown" id="searchResults"></div>
+      </div>
+
+      <div class="header-actions">
+        <a href="#" class="action-btn mobile-search-trigger" aria-label="Search Engine">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span>খুঁজুন</span>
+        </a>
+        <a href="#" class="action-btn" aria-label="Sign In">
+          <i class="fa-regular fa-user"></i>
+          <span>সাইন ইন</span>
+        </a>
+        <a href="#" class="action-btn" aria-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span>উইশলিস্ট</span>
+        </a>
+        <a href="#" class="action-btn" aria-label="Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>কার্ট</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-bar">
+    <div class="container">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fa-solid fa-book"></i> বই <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;"></i></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#">উপন্যাস ও গল্প</a></li>
+            <li class="dropdown-item"><a href="#">ইসলামিক সাহিত্য</a></li>
+            <li class="dropdown-item"><a href="#">সাইন্স ফিকশন</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fa-solid fa-laptop"></i> ইলেকট্রনিক্স <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;"></i></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#">স্মার্টওয়াচ & ব্যান্ড</a></li>
+            <li class="dropdown-item"><a href="#">হেডফোন & স্পিকার</a></li>
+            <li class="dropdown-item"><a href="#">কম্পিউটার এক্সেসরিজ</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-pen-ruler"></i> স্টেশনারি</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-baby"></i> কিডস জোন</a></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fa-solid fa-book"></i>একাডেমিক বই<i class="fa-solid fa-chevron-down" style="font-size:0.75rem;"></i></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#">বিশ্ববিদ্যালয়</a></li>
+            <li class="dropdown-item"><a href="#">মেডিকেল</a></li>
+            <li class="dropdown-item"><a href="#">ইঞ্জিনিয়ারিং</a></li>
+            <li class="dropdown-item"><a href="#">একাদশ/দ্বাদশ শ্রেণি</a></li>
+            <li class="dropdown-item"><a href="#">দশম শ্রেণি</a></li>
+            <li class="dropdown-item"><a href="#">নবম শ্রেণি</a></li>
+            <li class="dropdown-item"><a href="#">অষ্টম শ্রেণি</a></li>
+            <li class="dropdown-item"><a href="#">সপ্তম শ্রেণি</a></li>
+            <li class="dropdown-item"><a href="#">ষষ্ঠ শ্রেণি</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fa-solid fa-graduation-cap"></i>ভর্তি পরীক্ষা<i class="fa-solid fa-chevron-down" style="font-size:0.75rem;"></i></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#">বিশ্ববিদ্যালয় ভর্তি প্রস্তুতি</a></li>
+            <li class="dropdown-item"><a href="#">মেডিকেল ভর্তি প্রস্তুতি</a></li>
+            <li class="dropdown-item"><a href="#">ইঞ্জিনিয়ারিং ভর্তি প্রস্তুতি</a></li>
+            <li class="dropdown-item"><a href="#">কলেজ/একাদশ শ্রেণি ভর্তি প্রস্তুতি</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-fire"></i> বেস্টসেলার</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-tags"></i>আজকের অফার</a></li>
+        
+        
+        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-award"></i>উপহার</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="overlay-backdrop" id="overlayBackdrop"></div>
+  <aside class="side-drawer" id="sideDrawer">
+    <div class="drawer-header">
+      <div class="drawer-logo"><img src="Image/Rokomari.svg 2.png" alt="Logo"></div>
+      <button class="close-drawer-btn" id="closeDrawer"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="drawer-content">
+      <ul class="drawer-menu">
+        <li class="drawer-item">
+          <a href="#" class="drawer-link"><i class="fa-solid fa-book"></i> বই <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;"></i></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#">উপন্যাস ও গল্প</a></li>
+            <li class="dropdown-item"><a href="#">ইসলামিক সাহিত্য</a></li>
+            <li class="dropdown-item"><a href="#">সাইন্স ফিকশন</a></li>
+          </ul>
+        </li>
+        <li class="drawer-item">
+          <a href="#" class="drawer-link"><i class="fa-solid fa-laptop"></i> ইলেকট্রনিক্স <i class="fa-solid fa-chevron-down" style="font-size:0.75rem;"></i></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#">স্মার্টওয়াচ & ব্যান্ড</a></li>
+            <li class="dropdown-item"><a href="#">হেডফোন & স্পিকার</a></li>
+            <li class="dropdown-item"><a href="#">কম্পিউটার এক্সেসরিজ</a></li>
+          </ul>
+        </li>
+        <li class="drawer-item"><a href="#" class="drawer-link"><i class="fa-solid fa-pen-ruler"></i> স্টেশনারি</a></li>
+        <li class="drawer-item"><a href="#" class="drawer-link"><i class="fa-solid fa-baby"></i> কিডস জোন</a></li>
+        <li class="drawer-item">
+          <a href="#" class="drawer-link"><i class="fa-solid fa-book"></i>একাডেমিক বই<i class="fa-solid fa-chevron-down" style="font-size:0.75rem;"></i></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#">বিশ্ববিদ্যালয়</a></li>
+            <li class="dropdown-item"><a href="#">মেডিকেল</a></li>
+            <li class="dropdown-item"><a href="#">ইঞ্জিনিয়ারিং</a></li>
+            <li class="dropdown-item"><a href="#">একাদশ/দ্বাদশ শ্রেণি</a></li>
+            <li class="dropdown-item"><a href="#">দশম শ্রেণি</a></li>
+            <li class="dropdown-item"><a href="#">নবম শ্রেণি</a></li>
+            <li class="dropdown-item"><a href="#">অষ্টম শ্রেণি</a></li>
+            <li class="dropdown-item"><a href="#">সপ্তম শ্রেণি</a></li>
+            <li class="dropdown-item"><a href="#">ষষ্ঠ শ্রেণি</a></li>
+          </ul>
+        </li>
+        <li class="drawer-item">
+          <a href="#" class="drawer-link"><i class="fa-solid fa-graduation-cap"></i>ভর্তি পরীক্ষা<i class="fa-solid fa-chevron-down" style="font-size:0.75rem;"></i></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="#">বিশ্ববিদ্যালয় ভর্তি প্রস্তুতি</a></li>
+            <li class="dropdown-item"><a href="#">মেডিকেল ভর্তি প্রস্তুতি</a></li>
+            <li class="dropdown-item"><a href="#">ইঞ্জিনিয়ারিং ভর্তি প্রস্তুতি</a></li>
+            <li class="dropdown-item"><a href="#">কলেজ/একাদশ শ্রেণি ভর্তি প্রস্তুতি</a></li>
+          </ul>
+        </li>
+        <li class="drawer-item"><a href="#" class="drawer-link"><i class="fa-solid fa-fire"></i> বেস্টসেলার</a></li>
+        <li class="drawer-item"><a href="#" class="drawer-link"><i class="fa-solid fa-tags"></i>আজকের অফার</a></li>
+        <li class="drawer-item"><a href="#" class="drawer-link"><i class="fa-solid fa-award"></i>উপহার</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="container hero-section">
+    <div class="hero-grid">
+      
+      <div class="hero-slider-container">
+        
+        <button class="slider-btn prev-btn" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="slider-btn next-btn" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <div class="slide slide-bg-1 active">
+          <div class="slide-content">
+            <span class="slide-tag">মেগা ছাড়</span>
+            <h1 class="slide-title">বইমেলা ২০২৬-এর সেরা সব বইতে ৪৫% ছাড়!</h1>
+            <p class="slide-desc">আপনার প্রিয় লেখকের জনপ্রিয় বইগুলো সংগ্রহ করুন আকর্ষনীয় মূল্যে।</p>
+            <a href="#" class="btn-primary">এখনই কিনুন <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="slide slide-bg-2">
+          <div class="slide-content">
+            <span class="slide-tag">গ্যাজেট অফার</span>
+            <h1 class="slide-title">হেডফোন ও স্মার্টওয়াচে বিশেষ ক্যাশব্যাক</h1>
+            <p class="slide-desc">অরিজিনাল গ্যাজেট কিনুন অফিশিয়াল ওয়ারেন্টিসহ।</p>
+            <a href="#" class="btn-primary">অফার দেখুন <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="slider-dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+     <div class="promo-card">
+        <div>
+          <span style="color:var(--accent-color, #e63946); font-weight:700; font-size:0.8rem;">অ্যাপ অফার</span>
+          <h3 class="promo-title">প্রথম অর্ডারে ফ্রি শিপিং,<br>১১৯৯+ টাকা এমাউন্টের শপিং করলেই !</h3>
+          <p style="font-size:0.85rem; color:var(--text-muted, #666);">রকমারি অ্যাপ ইনস্টল করুন এবং প্রমো কোড ব্যবহার করুন।</p>
+          <div class="promo-code">PROMO: APP1ST</div>
+        </div>
+        <a href="#" class="btn-primary" style="text-align:center; font-size:0.85rem; padding:8px;">অ্যাপ ডাউনলোড</a>
+      </div>
+    </div>
+    <div style="margin-top: 36px;">
+  <div class="section-title">
+    <span>Shop By Category</span>
+    <a href="#" class="view-all-link">View All<i class="fa-solid fa-chevron-right"></i></a>
+  </div>
+  
+  <div class="categories-grid">
+    <a href="#" class="category-card">
+      <div class="category-thumb">
+        <img src="Image/Book.jpg" alt="Book">
+      </div>
+      <span class="category-name">Book</span>
+    </a>
+
+    <a href="#" class="category-card">
+      <div class="category-thumb">
+        <img src="Image/Electronics.jpg" alt="Electronics">
+      </div>
+      <span class="category-name">Electronics</span>
+    </a>
+
+    <a href="#" class="category-card">
+      <div class="category-thumb">
+        <img src="Image/Beauty.jpg" alt="Beauty & Health">
+      </div>
+      <span class="category-name">Beauty & Health</span>
+    </a>
+
+    <a href="#" class="category-card">
+      <div class="category-thumb">
+        <img src="Image/Stationery.jpg" alt="Stationery">
+      </div>
+      <span class="category-name">Stationery</span>
+    </a>
+
+    <a href="#" class="category-card">
+      <div class="category-thumb">
+        <img src="Image/Groceries.jpg" alt="Groceries">
+      </div>
+      <span class="category-name">Groceries</span>
+    </a>
+
+    <a href="#" class="category-card">
+      <div class="category-thumb">
+        <img src="Image/Ebook.jpg" alt="E-book">
+      </div>
+      <span class="category-name">E-book</span>
+    </a>
+
+    <a href="#" class="category-card">
+      <div class="category-thumb">
+        <img src="Image/Gift.jpg" alt="Gift Voucher">
+      </div>
+      <span class="category-name">Gift Voucher</span>
+    </a>
+
+    <a href="#" class="category-card">
+      <div class="category-thumb">
+        <img src="Image/Islamic.jpg" alt="Islamic Accessories">
+      </div>
+      <span class="category-name">Islamic Accessories</span>
+    </a>
+  </div>
+  </main>
+
+</body>
+</html>
